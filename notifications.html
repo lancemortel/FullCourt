@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Notifications | FullCourt Supply</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/products.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="index.html">Full<span>Court</span></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a><a href="products.html">Products</a
+          ><a href="settings.html">Settings</a>
+        </div>
+        <div class="nav-actions">
+          <a class="icon-btn" href="cart.html"
+            >🛒<span class="count" data-cart-count>0</span></a
+          ><button class="icon-btn menu-btn">☰</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Your activity</span>
+          <h1>Notifications</h1>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container" style="max-width: 820px">
+          <div class="section-head">
+            <h2 class="section-title">Latest updates</h2>
+            <button
+              class="text-btn"
+              onclick="document.querySelectorAll('.notice').forEach(n=>n.classList.remove('unread'))"
+            >
+              Mark all as read
+            </button>
+          </div>
+          <div class="notice-list">
+            <article class="notice unread">
+              <span>🚚</span>
+              <div>
+                <strong>Your demo order is on the way</strong>
+                <p>
+                  FC-240731 has left the sorting hub. Track it for the latest
+                  update.
+                </p>
+                <small>10 minutes ago</small>
+              </div>
+            </article>
+            <article class="notice unread">
+              <span>🏀</span>
+              <div>
+                <strong>Back in stock</strong>
+                <p>
+                  The Court Pro Elite Basketball is ready for your next game.
+                </p>
+                <small>2 hours ago</small>
+              </div>
+            </article>
+            <article class="notice">
+              <span>🔥</span>
+              <div>
+                <strong>Recommended for you</strong>
+                <p>
+                  Explore training essentials selected for guards and varsity
+                  players.
+                </p>
+                <small>Yesterday</small>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

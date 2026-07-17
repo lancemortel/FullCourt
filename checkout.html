@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Checkout | FullCourt Supply</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/products.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body data-page="checkout">
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="index.html">Full<span>Court</span></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a><a href="products.html">Products</a
+          ><a href="cart.html">Cart</a>
+        </div>
+        <div class="nav-actions"><span>Secure demo checkout 🔒</span></div>
+      </nav>
+    </header>
+    <main id="checkout-main">
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Final step</span>
+          <h1>Checkout</h1>
+          <p>This is a simulation. Do not enter real payment information.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container cart-layout">
+          <form id="checkout-form" class="panel">
+            <h2>Delivery details</h2>
+            <div class="form-grid">
+              <div class="field">
+                <label>First name</label><input required /><small class="error"
+                  >Required</small
+                >
+              </div>
+              <div class="field">
+                <label>Last name</label><input required /><small class="error"
+                  >Required</small
+                >
+              </div>
+              <div class="field full">
+                <label>Email</label><input type="email" required /><small
+                  class="error"
+                  >Required</small
+                >
+              </div>
+              <div class="field full">
+                <label>Delivery address</label><input required /><small
+                  class="error"
+                  >Required</small
+                >
+              </div>
+              <div class="field">
+                <label>City</label><input required /><small class="error"
+                  >Required</small
+                >
+              </div>
+              <div class="field">
+                <label>Postal code</label><input required /><small class="error"
+                  >Required</small
+                >
+              </div>
+            </div>
+            <h2>Demo payment</h2>
+            <div class="field">
+              <label>Name on card</label
+              ><input required value="Demo Customer" /><small class="error"
+                >Required</small
+              >
+            </div>
+            <div class="field">
+              <label>Card number</label
+              ><input required value="4242 4242 4242 4242" readonly /><small
+                class="error"
+                >Required</small
+              >
+            </div>
+            <button class="btn btn-primary btn-block">Place demo order</button>
+          </form>
+          <aside class="summary">
+            <h2>Your order</h2>
+            <div id="checkout-items"></div>
+            <div class="summary-line summary-total">
+              <span>Total</span><span id="checkout-total">₱0</span>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--muted)">
+              No payment will be collected.
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <div class="toast"></div>
+  </body>
+</html>

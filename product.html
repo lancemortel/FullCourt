@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Product Details | FullCourt Supply</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/products.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body data-page="products">
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="index.html">Full<span>Court</span></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a
+          ><a class="active" href="products.html">Products</a
+          ><a href="about.html">About</a><a href="tracking.html">Track Order</a>
+        </div>
+        <div class="nav-actions">
+          <a class="icon-btn" href="cart.html"
+            >🛒<span class="count" data-cart-count>0</span></a
+          ><button class="icon-btn menu-btn">☰</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container" id="product-detail"></div>
+      </section>
+      <section class="section" style="background: #eee9df">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">You may also like</span>
+              <h2 class="section-title">Recommended gear</h2>
+            </div>
+          </div>
+          <div class="product-grid" id="recommendations"></div>
+        </div>
+      </section>
+    </main>
+    <div id="quick-modal" class="modal"></div>
+    <div class="toast"></div>
+  </body>
+</html>

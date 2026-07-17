@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Log In | FullCourt Supply</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/products.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <main class="auth-page">
+      <section class="auth-brand">
+        <a class="logo" style="color: white" href="index.html"
+          >Full<span>Court</span></a
+        >
+        <div>
+          <span class="eyebrow">Welcome back</span>
+          <h1>Return to <span>the court.</span></h1>
+          <p>Save favorites, review orders, and keep your gear ready.</p>
+        </div>
+        <small>Student e-commerce prototype · No real account is created</small>
+      </section>
+      <section class="auth-form-wrap">
+        <form
+          class="auth-form"
+          data-validate
+          data-success="Demo login successful! Redirecting…"
+          data-redirect="index.html"
+        >
+          <a class="logo" href="index.html">Full<span>Court</span></a>
+          <h2>Log in</h2>
+          <p>Access your demo player account.</p>
+          <div class="field">
+            <label>Email address</label
+            ><input
+              type="email"
+              required
+              placeholder="player@example.com"
+            /><small class="error">Enter a valid email.</small>
+          </div>
+          <div class="field">
+            <label>Password</label
+            ><input
+              type="password"
+              required
+              minlength="6"
+              placeholder="At least 6 characters"
+            /><small class="error">Enter your password.</small>
+          </div>
+          <div class="check-row">
+            <label><input type="checkbox" /> Remember me</label
+            ><a class="text-btn" href="#">Forgot password?</a>
+          </div>
+          <button class="btn btn-primary btn-block">Log in</button>
+          <div class="demo-note">
+            Demo only: any valid email and 6-character password will work.
+          </div>
+        </form>
+      </section>
+    </main>
+    <div class="toast"></div>
+  </body>
+</html>

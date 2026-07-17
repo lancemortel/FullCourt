@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Order Tracking | FullCourt Supply</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/products.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="index.html">Full<span>Court</span></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a><a href="products.html">Products</a
+          ><a class="active" href="tracking.html">Track Order</a
+          ><a href="about.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a class="icon-btn" href="cart.html"
+            >🛒<span class="count" data-cart-count>0</span></a
+          ><button class="icon-btn menu-btn">☰</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero tracking-box">
+        <div class="container">
+          <span class="eyebrow">Stay in the loop</span>
+          <h1>Track your order</h1>
+          <p style="margin: auto">
+            Enter any demo tracking number, such as FC-240731.
+          </p>
+          <form id="track-form" class="tracking-form">
+            <input
+              id="tracking-code"
+              placeholder="Enter tracking number"
+              aria-label="Tracking number"
+            /><button class="btn btn-primary">Track order</button>
+          </form>
+        </div>
+      </section>
+      <section class="section" id="tracking-result" hidden>
+        <div class="container panel">
+          <p class="eyebrow">Order <span id="tracking-label"></span></p>
+          <h2 class="section-title">On the way</h2>
+          <div class="timeline">
+            <div class="track-step done">
+              <div class="track-dot">✓</div>
+              <strong>Confirmed</strong><small>Order received</small>
+            </div>
+            <div class="track-step done">
+              <div class="track-dot">✓</div>
+              <strong>Packed</strong><small>Gear prepared</small>
+            </div>
+            <div class="track-step done">
+              <div class="track-dot">3</div>
+              <strong>In transit</strong><small>With courier</small>
+            </div>
+            <div class="track-step">
+              <div class="track-dot">4</div>
+              <strong>Delivered</strong><small>Almost there</small>
+            </div>
+          </div>
+          <p style="text-align: center">
+            Estimated arrival: <strong>Tomorrow, before 6:00 PM</strong>
+          </p>
+        </div>
+      </section>
+    </main>
+    <div class="toast"></div>
+  </body>
+</html>

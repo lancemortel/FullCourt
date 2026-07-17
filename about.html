@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About & Contact | FullCourt Supply</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/products.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body data-page="about">
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="index.html">Full<span>Court</span></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a><a href="products.html">Products</a
+          ><a class="active" href="about.html">About</a
+          ><a href="tracking.html">Track Order</a>
+        </div>
+        <div class="nav-actions">
+          <a class="icon-btn" href="cart.html"
+            >🛒<span class="count" data-cart-count>0</span></a
+          ><button class="icon-btn menu-btn">☰</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">More than equipment</span>
+          <h1>Made for the game</h1>
+          <p>
+            FullCourt Supply is a student-built concept store for players,
+            coaches, school varsity teams, and fitness enthusiasts.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container detail-grid">
+          <div>
+            <span class="eyebrow">Our concept</span>
+            <h2 class="section-title">Every player deserves reliable gear</h2>
+            <p>
+              We designed FullCourt to make basketball equipment easier to
+              discover. The prototype combines a realistic shopping experience
+              with simple, accessible interactions that work on phones and
+              computers.
+            </p>
+            <p>
+              This website is an academic prototype. Products, prices, checkout,
+              and order tracking are demonstrations only.
+            </p>
+          </div>
+          <div class="panel">
+            <h2>What we stand for</h2>
+            <p>
+              🏀 <strong>Performance:</strong> Products chosen around real
+              player needs.
+            </p>
+            <p>
+              🤝 <strong>Community:</strong> Support for individuals, coaches,
+              and school teams.
+            </p>
+            <p>
+              ⚡ <strong>Simplicity:</strong> A quick, clear shopping
+              experience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="contact" style="background: #eee9df">
+        <div class="container detail-grid">
+          <div>
+            <span class="eyebrow">Talk to our team</span>
+            <h2 class="section-title">Contact us</h2>
+            <p>
+              Questions about a product, a team order, or this student project?
+              Send a demo message.
+            </p>
+            <p>
+              <strong>Email:</strong> hello@fullcourtsupply.example<br /><strong
+                >Location:</strong
+              >
+              Metro Manila, Philippines
+            </p>
+          </div>
+          <form
+            class="panel"
+            data-validate
+            data-success="Thanks! Your demo message was sent."
+          >
+            <div class="field">
+              <label>Name</label><input required /><small class="error"
+                >Please enter your name.</small
+              >
+            </div>
+            <div class="field">
+              <label>Email</label><input type="email" required /><small
+                class="error"
+                >Enter a valid email.</small
+              >
+            </div>
+            <div class="field">
+              <label>Message</label><textarea rows="5" required></textarea
+              ><small class="error">Please enter a message.</small>
+            </div>
+            <button class="btn btn-primary">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div class="toast"></div>
+  </body>
+</html>
